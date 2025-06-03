@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
 
     // Employee Management
     Route::get('employee', [\App\Http\Controllers\employeecontroller::class, 'index'])->name('employee.index');
+    Route::get('employee', [\App\Http\Controllers\employeecontroller::class, 'store'])->name('employee.store');
     //end of employee management
 
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');

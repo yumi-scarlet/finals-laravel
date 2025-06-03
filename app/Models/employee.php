@@ -17,6 +17,7 @@ class employee extends Model
         'midname',
         'age',
         'address',
-        'zip'
+        'zip', 
+        'action'
     ];
 }
